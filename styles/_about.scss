@@ -1,0 +1,59 @@
+/*function for heading tag */
+heading {
+  color: #f1f1f1;
+  font-weight: 400;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+/* Style for about section */
+#about {
+  @extend %bodymain;
+  color: #757575;
+  h2 {
+    @extend heading;
+    font-size: 30px;
+}
+  hr {
+    width: 260px;
+    opacity: 0.60;
+    margin: 20px 0;
+    border-top: 1px solid #eee;
+  }
+  h3 {
+    @extend heading;
+    font-size: 24px;
+  }
+
+  div.in {
+    background: #fff;
+  }
+  div.out {
+    height: 28px;
+    background: #616161;
+  }
+
+  p.skill {
+    margin: 15px 0;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  /* Styling boxing of acheiveing */
+  .row {
+  	content: "";
+  	display: table;
+  	clear: both;
+  	color: #000;
+  	background-color: #f1f1f1;
+  	padding: 16px 0;
+  	margin: 16px 0;
+  	text-align: center;
+  	width: 100%;
+    .box {
+      float: left;
+      width: 33.3%;
+      margin: 16px 0;
+    }
+  }
+}
